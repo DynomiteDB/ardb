@@ -1,13 +1,26 @@
+# IDE
+.idea
+
+# Temp files
+*.bak
+*.swp
+
+# Build files
 *.o
 *.so
 *.a
-/.svn
-/.libs
-ardb-test*
-ardb-server*
-*.bak
-snappy-*/
-gperftools-*/
-jemalloc-*/
-leveldb-*/
-/Debug
+.libs
+deps/jemalloc-3.6.0/
+deps/leveldb-1.18/
+deps/mdb-mdb/
+deps/snappy-1.1.2/
+deps/wiredtiger-2.5.1/
+src/.kv_engine
+
+# Packaging
+dynomitedb-backends.tar.gz
+package/
+
+# Binaries
+ardb-server
+ardb-test
