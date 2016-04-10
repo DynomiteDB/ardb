@@ -406,7 +406,7 @@ OP_NAMESPACE_BEGIN
         make_dir(m_cfg.home);
         if (0 != chdir(m_cfg.home.c_str()))
         {
-            ERROR_LOG("Faild to change dir to home:%s", m_cfg.home.c_str());
+            ERROR_LOG("Failed to change dir to home:%s", m_cfg.home.c_str());
             return -1;
         }
 
@@ -414,7 +414,7 @@ OP_NAMESPACE_BEGIN
         m_engine = m_engine_factory.CreateDB(m_engine_factory.GetName().c_str());
         if (NULL == m_engine || CheckStorageCodecVersion() != 0)
         {
-            ERROR_LOG("Faild to open db:%s", m_cfg.home.c_str());
+            ERROR_LOG("Failed to open db:%s", m_cfg.home.c_str());
             return -1;
         }
         RenameCommand();
