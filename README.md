@@ -17,7 +17,7 @@ Specifically, the combination of Dynomite and ARDB means that you can use the sa
 - High frequency write workloads (on disk)
 - Real-time analytics (in-memory)
 
-This repo is a fork of [ARDB](https://github.com/yinqiwen/ardb)], a BSD licensed RESP compatible server.
+This repo is a fork of [ARDB](https://github.com/yinqiwen/ardb), a BSD licensed RESP compatible server.
 
 ## Database storage engines
 
